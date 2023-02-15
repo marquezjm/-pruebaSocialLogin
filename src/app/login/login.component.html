@@ -1,0 +1,17 @@
+<div class="container" *ngIf="!isLogged">
+    <div class="row m-3">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-header text-center">
+                    Inicio de Sesión
+                </div>
+                <div class="card-body d-grid">
+                    <asl-google-signin-button type="standard" size="medium" theme="outline" width="400" text="signin_with" shape="pill"></asl-google-signin-button>
+                    <button class="btn btn-outline-primary btn-lg" (click)="loginWithFacebook()">
+                        Iniciar Sesión con Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

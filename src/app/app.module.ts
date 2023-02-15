@@ -4,10 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    LoginComponent,
+    HomeComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,7 @@ import { AppComponent } from './app.component';
         },
         {
           id: FacebookLoginProvider.PROVIDER_ID,
-          provider: new FacebookLoginProvider('clientId')
+          provider: new FacebookLoginProvider('3334406666875560')
         }
       ],
       onError: (err) => {
